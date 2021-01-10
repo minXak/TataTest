@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<title>HTML теги для КОНТЕНТА. Уроки HTML CSS JS. Урок №3</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+</head>	
+
+<body>
+	<form action="#" method="post">
+
+	<div>
+		<p>Фамилия (только русскими и латинскими буквами)</p>
+		<input tabindex="1" placeholder="Фамилия" type="text" name="uservorname" pattern="[A-Za-zА-Яа-яЁё]">
+	</div>
+
+	<div>
+		<p>Имя (только русскими и латинскими буквами)</p>
+		<input tabindex="2" placeholder="Имя" type="text" name="username" pattern="[A-Za-zА-Яа-яЁё]">
+	</div>
+
+	<div>
+		<p>Введите телефон в формате +420-xxx-xxx-xxx, где вместо x должна быть цифра:</p>
+		<input placeholder="Телефон" type="tel" name="userphone" maxlength="11" pattern="+420-[0-9]{3}-[0-9]{3}-[0-9]{3}">
+	</div>	
+
+	<div>
+		<p>Дату рождения в формате хх-хх-хххх (день-месяц-год)</p>
+		<input type="date" name="date-birthsday">
+	</div>
+
+	<div>
+		<p>АДРЕС</p>
+		<p>Почтовый чешский индекс (5 цифр в формате ХХХ ХХ)</p>
+		<input type="tel" name="post-index" maxlength="6" pattern="[0-9]{3}-\s-[0-9]{2}">
+	</div>
+
+	<div>
+		<p>Город</p>
+		<input list="citis">
+		<datalist id="citis">
+			<option>Прага</option>
+			<option>Брно</option>
+			<option>Оломоуц</option>
+			<option>Минск</option>
+			<option>Берёза</option>
+		</datalist>
+	</div>
+
+<div>
+		<p>Улица, № дом</p>
+		<input list="streets">
+		<datalist id="streets">
+			<option>V mokřinech 20</option>
+			<option>Vranova 16</option>
+			<option>Praskova 5</option>
+			<option>Притыцкого 8-46</option>
+			<option>Серерный 43-38</option>
+		</datalist>
+	</div>
+
+	<div>
+		<p>Пол</p>
+		<div>
+			<input tabindex="4" type="radio" checked name="genter" value="male"> Мужской
+		</div>
+		<div>
+			<input tabindex="5" type="radio" name="genter" value="gemale"> Женский
+		</div>
+	</div>	
+
+
+	<div>
+		<p>Имущество</p>
+		<div>
+			<input tabindex="6" type="checkbox" checked name="Bike" value="yes"> Велосипед
+		</div>
+		<div>
+			<input tabindex="7" type="checkbox" name="Car" value="yes"> Машина
+		</div>
+		<div>
+			<input disabled type="checkbox" name="House" value="yes"> Дом
+		</div>
+	</div>
+
+	<div>
+		<p>Дополнительная информация</p>
+		<textarea tabindex="8" placeholder="Напишите сообщение"> 
+		</textarea>
+	</div>
+
+	<div>
+		<p>Напитки</p>
+		<input list="name-famaly">
+		<datalist id="name-famaly">
+			<option>Аперитивы</option>
+			<option>Водки</option>
+			<option>Коньяки</option>
+			<option>Вина</option>
+			<option>Пиво</option>
+		</datalist>
+	</div>
+
+	<div>
+		<p>Прикрепить фото</p>
+		<input type="file">
+	</div>
+
+	<div>
+		<p>Любимый цвет</p>
+		<select tabindex="9" multiple name="color">
+			<option value="red">Красный</option>
+  			<option selected value="green">Зелёный</option>
+  			<option value="blue">Синий</option>
+  			<option value="yellow">Жёлтый</option>
+  			<option value="pink">Розовый</option>
+		</select>
+	</div>
+
+	<div>
+		<p>Пошли письмо Деду Сяроже</p>
+		<button type="submit">Отправить письмо</button>
+		<br>
+		<br>
+		<button type="reset">Сбросить</button>
+	</div>
+
+	<div>
+		<p>Пошли письмо Снегурочке (бабушке Оле)</p>
+		<button type="submit">Отправить</button>
+		<br>
+		<br>
+		<button type="reset">Сбросить</button>
+	</div>
+
+</form>
+
+</body>
+</html>

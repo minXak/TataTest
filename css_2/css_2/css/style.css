@@ -1,0 +1,164 @@
+/*Обнуление*/
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #AA357A;
+	text-shadow: 2px 2px 4px #000;
+	font-family: cursive;
+}
+
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #535d67;
+	border-radius: 8px;
+	font-size: 0;
+	background-origin: 1px solid black;
+	box-shadow: 2px 2px 4px #000;
+}
+
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-align-last: center;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+}
+
+nav.animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+
+a:nth-child(1) {
+	width: 100px;
+}
+
+a:nth-child(2) {
+	width: 110px;
+}
+
+a:nth-child(3) {
+	width: 100px;
+}
+
+a:nth-child(4) {
+	width: 140px;
+}
+
+a:nth-child(5) {
+	width: 120px;
+}
+
+nav .start-home, 
+a:nth-child(1):hover - .animalion {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+
+nav .start-about, 
+a:nth-child(2):hover - .animalion {
+	width: 110px;
+	left: 100px;
+	background-color: #1abc9c;
+}
+
+nav .start-blog, 
+a:nth-child(3):hover - .animalion {
+	width: 100px;
+	left: 210px;
+	background-color: #1abc9c;
+}
+
+nav .start-home, 
+a:nth-child(4):hover - .animalion {
+	width: 140px;
+	left: 310px;
+	background-color: #1abc9c;
+}
+
+nav .start-contact, 
+a:nth-child(5):hover - .animalion {
+	width: 120px;
+	left: 470px;
+	background-color: #1abc9c;
+}
+
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #33689d;	
+}
+.example-1 {
+	width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    background: #C8C7E6;
+    color: red;
+}
+
+.example-2 {
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: #ffffff;
+	color: green;
+}
+
